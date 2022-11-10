@@ -1,0 +1,10 @@
+SELECT 
+    BOOK_NUM, BOOK_TITLE, BOOK_COST
+FROM
+    book
+WHERE
+    BOOK_COST IN (SELECT 
+            MIN(BOOK_COST)
+        FROM
+            book)
+ORDER BY BOOK_NUM;

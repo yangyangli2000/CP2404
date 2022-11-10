@@ -1,0 +1,8 @@
+SELECT 
+    BRAND_NAME, COUNT(PROD_SKU) AS 'NUMPRODUCTS'
+FROM
+    lgbrand
+        JOIN
+    lgproduct ON lgbrand.BRAND_ID = lgproduct.BRAND_ID
+GROUP BY BRAND_NAME
+ORDER BY BRAND_NAME;

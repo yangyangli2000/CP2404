@@ -1,0 +1,3 @@
+select CHECK_NUM, BOOK_NUM, PAT_ID, CHECK_OUT_DATE, CHECK_DUE_DATE
+from checkout
+order by CHECK_OUT_DATE desc, CHECK_NUM;
